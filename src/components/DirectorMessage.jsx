@@ -60,7 +60,7 @@ function DirectorMessage() {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
             {/* Director Information */}
-            <div className="absolute bottom-0 left-0 p-6 sm:p-8 lg:p-10">
+            <div className="absolute bottom-0 left-0  sm:p-2 lg:p-2">
 
               
 
@@ -68,7 +68,7 @@ function DirectorMessage() {
                 Krishna Dubey
               </h3>
 
-              <p className="mt-1 text-sm text-slate-300">
+              <p className="mt-1 text-sm text-blue-600 ">
                 Director · Sanyog Group
               </p>
 
