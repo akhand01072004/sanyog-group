@@ -15,26 +15,26 @@ function Hero() {
         }}
       />
 
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-slate-950/75" />
 
-      {/* Blue glow */}
+      {/* Blue Glow */}
       <div className="absolute -right-40 top-1/4 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
 
-      {/* Content */}
+      {/* Hero Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-24 lg:px-8">
         <div className="max-w-4xl">
 
           {/* Eyebrow */}
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-10 bg-blue-500" />
+            <span className="h-px w-8 shrink-0 bg-blue-500 sm:w-10" />
 
-            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-400 sm:text-sm sm:tracking-[0.25em]">
               Infrastructure • Civil • Engineering
             </span>
           </div>
 
-          {/* Heading */}
+          {/* Main Heading */}
           <h1 className="max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-8xl">
             Building
             <span className="block text-blue-500">
@@ -50,9 +50,10 @@ function Hero() {
             and reliable project delivery.
           </p>
 
-          {/* Buttons */}
+          {/* CTA Buttons */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
+            {/* Services */}
             <a
               href="#services"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3.5 font-semibold text-white transition hover:bg-blue-500"
@@ -61,10 +62,11 @@ function Hero() {
 
               <ArrowRight
                 size={18}
-                className="transition-transform group-hover:translate-x-1"
+                className="transition-transform duration-200 group-hover:translate-x-1"
               />
             </a>
 
+            {/* Contact */}
             <a
               href="tel:9473684061"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
@@ -74,51 +76,6 @@ function Hero() {
             </a>
 
           </div>
-        </div>
-
-        {/* Bottom information */}
-        <div className="mt-20 grid max-w-4xl grid-cols-2 gap-6 border-t border-white/10 pt-6 sm:grid-cols-4">
-
-          <div>
-            <p className="text-xs uppercase tracking-widest text-slate-500">
-              Focus
-            </p>
-
-            <p className="mt-2 text-sm font-medium text-white">
-              Infrastructure
-            </p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-widest text-slate-500">
-              Expertise
-            </p>
-
-            <p className="mt-2 text-sm font-medium text-white">
-              Civil Works
-            </p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-widest text-slate-500">
-              Contracting
-            </p>
-
-            <p className="mt-2 text-sm font-medium text-white">
-              PWD & Roads
-            </p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-widest text-slate-500">
-              Location
-            </p>
-
-            <p className="mt-2 text-sm font-medium text-white">
-              Jaunpur, UP
-            </p>
-          </div>
-
         </div>
       </div>
     </section>
