@@ -7,28 +7,27 @@ const projects = [
     title: "Road & PWD Works",
     description:
       "Road construction and infrastructure works within the company's stated contracting profile.",
-    image:
-      "https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=1400&q=85",
+    image: "/images/services/road.jpeg",
     location: "Project details to be updated",
   },
+
   {
-  number: "02",
-  category: "WATER INFRASTRUCTURE",
-  title: "Jal Jeevan Mission",
-  description:
-    "Water and utility infrastructure work associated with the Jal Jeevan Mission.",
-  image:
-    "https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1400&q=85",
-  location: "Project details to be updated",
-},
+    number: "02",
+    category: "WATER INFRASTRUCTURE",
+    title: "Jal Jeevan Mission",
+    description:
+      "Water and utility infrastructure work associated with the Jal Jeevan Mission.",
+    image: "/images/services/water.jpeg",
+    location: "Project details to be updated",
+  },
+
   {
     number: "03",
     category: "TELECOM INFRASTRUCTURE",
     title: "BSNL Fiber Works",
     description:
       "Fiber and telecommunications infrastructure work within the company's stated work profile.",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85",
+    image: "/images/services/fiber.jpeg",
     location: "Project details to be updated",
   },
 ];
@@ -41,16 +40,19 @@ function Projects() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        {/* Header */}
+        {/* ================= HEADER ================= */}
         <div className="flex flex-col justify-between gap-8 border-b border-white/10 pb-12 lg:flex-row lg:items-end">
 
           <div>
+
             <div className="mb-5 flex items-center gap-3">
+
               <span className="h-px w-10 bg-blue-500" />
 
               <span className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
                 Our Work
               </span>
+
             </div>
 
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -59,7 +61,9 @@ function Projects() {
                 Infrastructure.
               </span>
             </h2>
+
           </div>
+
 
           <p className="max-w-md text-sm leading-6 text-slate-400">
             Explore the sectors included in Sanyog Group's current
@@ -69,71 +73,91 @@ function Projects() {
 
         </div>
 
-        {/* Projects */}
+
+        {/* ================= PROJECTS ================= */}
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
 
           {projects.map((project) => (
+
             <article
               key={project.number}
               className="group"
             >
 
-              {/* Image */}
+              {/* ================= IMAGE ================= */}
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-800">
 
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
 
-                {/* Overlay */}
+                {/* Image Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
-                {/* Number */}
+
+                {/* Project Number */}
                 <span className="absolute left-5 top-5 text-sm font-semibold tracking-widest text-white/70">
                   {project.number}
                 </span>
 
+
                 {/* Arrow */}
                 <div className="absolute bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-slate-950 transition duration-300 group-hover:bg-blue-600 group-hover:text-white">
+
                   <ArrowUpRight size={19} />
+
                 </div>
 
               </div>
 
-              {/* Content */}
+
+              {/* ================= CONTENT ================= */}
               <div className="border-b border-white/10 pb-7 pt-6">
 
+                {/* Category */}
                 <p className="text-xs font-semibold tracking-[0.2em] text-blue-400">
                   {project.category}
                 </p>
 
+
+                {/* Title */}
                 <h3 className="mt-3 text-2xl font-bold tracking-tight">
                   {project.title}
                 </h3>
 
+
+                {/* Description */}
                 <p className="mt-3 text-sm leading-6 text-slate-400">
                   {project.description}
                 </p>
 
+
+                {/* Location */}
                 <div className="mt-5 flex items-center gap-2 text-xs text-slate-500">
+
                   <MapPin size={14} />
 
                   {project.location}
+
                 </div>
 
               </div>
 
             </article>
+
           ))}
 
         </div>
 
-        {/* Portfolio CTA */}
+
+        {/* ================= PORTFOLIO CTA ================= */}
         <div className="mt-16 flex flex-col items-start justify-between gap-6 border border-white/10 bg-white/[0.03] p-7 sm:flex-row sm:items-center sm:p-9">
 
           <div>
+
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
               Portfolio
             </p>
@@ -147,18 +171,22 @@ function Projects() {
               here once the company provides the approved project
               portfolio.
             </p>
+
           </div>
+
 
           <a
             href="#contact"
             className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-blue-600 hover:text-white"
           >
+
             Share Project Details
 
             <ArrowUpRight
               size={17}
               className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
             />
+
           </a>
 
         </div>
