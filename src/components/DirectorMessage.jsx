@@ -62,9 +62,7 @@ function DirectorMessage() {
             {/* Director Information */}
             <div className="absolute bottom-0 left-0 p-6 sm:p-8 lg:p-10">
 
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
-                Leadership
-              </p>
+              
 
               <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
                 Krishna Dubey
