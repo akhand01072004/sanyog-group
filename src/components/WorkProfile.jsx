@@ -79,7 +79,7 @@ const WorkProfile = () => {
   }, []);
 
   return (
-    <section className="work-profile">
+    <section className="work-profile" id="work-profile">
 
       <div className="work-profile-container">
 
